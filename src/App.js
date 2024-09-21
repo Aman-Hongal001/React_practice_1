@@ -8,8 +8,8 @@ function App() {
     'name':"AmanHongal",
     'cName':"MERN",
     'desc':"React JS"
-  }
-
+  };
+  let status = true;
   return(
     <div className="App">
       <h1>{name}</h1>
@@ -21,6 +21,10 @@ function App() {
       <div>
         {obj.cName}
       </div>
+{/* the below code is to check the condition using ternary operator if the status is true it will show the h1 tag else nothing will be shown..The left side of : will execute when its true and right will execute if false */}
+      {  (status ? 
+      <h1 style={{color:"red",backgroundColor:"yellow"}}>Ternary operator is True</h1>:""
+      )  }
     </div>
   )
   // return (
