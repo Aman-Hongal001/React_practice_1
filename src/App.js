@@ -84,7 +84,9 @@ function App() {
       </div>
 
       {/* calling footer component */}
-      <Footer info2={someInfo} num2={num}/>
+      <Footer info2={someInfo} num2={num}>
+        <h1>Welcome to footer section (Inside Footer tag)</h1>
+      </Footer>
     </div>
   )
 }
