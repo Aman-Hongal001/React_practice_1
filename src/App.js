@@ -57,10 +57,18 @@ import { Footer } from './Footer';
 import Header from './Header';
 
 function App() {
+
+  let someInfo = {
+      "name":"Aman",
+      "yname":"WSCube"
+  };
+  let num = 8924523534
   return(
     <div>
       {/* calling header component */}
-      <Header/>
+      {/* passing the values to header using probs */}
+      <Header info={someInfo} num={num}/>
+
       <div className='row'>
         <Card/>
         <Card/>
@@ -75,10 +83,8 @@ function App() {
         <Card/>
       </div>
 
-
-
       {/* calling footer component */}
-      <Footer/>
+      <Footer info2={someInfo} num2={num}/>
     </div>
   )
 }
