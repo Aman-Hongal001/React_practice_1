@@ -179,6 +179,10 @@ import { blog } from './Data/blog';
 // import Card from 'react-bootstrap/Card';
 // import Button from 'react-bootstrap/Button';
 import { Button, Row, Col, Card, Container} from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import {  } from '@fortawesome/free-regular-svg-icons'
 
 function App() {
 
@@ -192,6 +196,8 @@ function App() {
       {/* calling header component */}
       {/* passing the values to header using probs */}
       <Header info={someInfo} num={num}/>
+      <FontAwesomeIcon icon={faWhatsapp} className='text-danger'/>
+      <FontAwesomeIcon icon={faPhone} />
 
 
       <Container fluid>
